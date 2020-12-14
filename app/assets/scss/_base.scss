@@ -1,0 +1,124 @@
+a{
+    display: block;
+    text-decoration: none;
+}
+
+.font-title {
+    font-size: $font-size-h6;
+    @include pad {
+        font-size: $font-size-h5;
+    }
+    @include mobile375 {
+        font-size: $font-size-h3;
+    }
+}
+.font-subhead {
+    font-size: $font-size-h4;
+    @include pad {
+        font-size: $font-size-h1;
+    }
+    @include mobile375 {
+        font-size: $font-size-m;
+    }
+}
+
+.font-caption {
+    font-size: $font-size-h5;
+    @include pad {
+        font-size: $font-size-h3;
+    }
+    @include mobile375 {
+        font-size: $font-size-h2;
+    }
+}
+
+.ft-opt {
+    font-size: $font-size-base * 2.625; //42px
+    @include desk992 {
+        font-size: 32px;
+    }
+    @include pad {
+        font-size: 28px;
+    }
+    @include iphone {
+        font-size: 14px;
+    }
+    
+}
+
+//容器設定
+$spacing: 20px;
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-left: $spacing * 2;
+    padding-right: $spacing * 2;
+    @include pad {
+        max-width: 690px;
+        margin: 0 auto;
+        padding-left: 39px;
+        padding-right: 39px;
+    }
+    @include mobile375 {
+        max-width: 345px;
+        margin: 0 auto;
+        padding-left: $spacing * 0.75;
+        padding-right: $spacing * 0.75;
+    }
+}
+.max-w920 {
+    max-width: 920px;
+    margin: 0 auto;
+}
+.background-image {
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+}
+.text-align{
+    text-align: center;
+}
+.d-flex{
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-row-reverse{
+    flex-direction: row-reverse;
+}
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+.align-center {
+    align-items: center;
+}
+.align-start {
+    align-items: flex-start;
+}
+.align-end {
+    align-items: flex-end;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-space-between {
+    justify-content: space-between;
+}
+.flex-space-around {
+    justify-content: space-around;
+}
+.w-100 {
+    width: 100%;
+}
+.h-100 {
+    height: 100%;
+}

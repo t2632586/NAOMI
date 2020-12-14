@@ -1,0 +1,14 @@
+.product-banner {
+  width: 100%;
+  justify-content: space-between;
+}
+.product-banner .product-banner_item_l {
+  width: 49%;
+  height: 309px;
+  background-image: url(../images/banner-1.png);
+}
+.product-banner .product-banner_item_r {
+  width: 49%;
+  height: 309px;
+  background-image: url(../images/banner-2.png);
+}

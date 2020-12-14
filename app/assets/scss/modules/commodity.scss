@@ -1,0 +1,37 @@
+.list {
+    flex-wrap: wrap;
+    @include desk1050 {
+        flex-wrap: wrap;
+    }
+}
+.commodity {
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 104px;
+    img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    @include desk1050 {
+        width: 50%;
+        margin-bottom: 72px;
+    }
+    @include iphone {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+}
+.color-box-brow {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 4px;
+    background-color: #5F3E2D;
+}
+.color-box-orange {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background-color:#B75929;
+}

@@ -1,0 +1,35 @@
+.page {
+    justify-content: center;
+    margin-bottom: 156px;
+    @include pad {
+        margin-bottom: 104px;
+    }
+    @include iphone {
+        margin-bottom: 56px;
+    }
+    .btn-page {
+        border: 1px solid #555555;
+        a {
+            color: #555555;
+            font-size: 19px;
+            padding: 10px 12px;
+            &:hover {
+            background-color: #F2F2F2;
+            transition: 0.5s;
+            }
+        }
+    }
+    .btn-page-number {
+        border: 1px solid #555555;
+        a {
+            font-size: 18px;
+            padding: 10px 14px;
+            color: #555555;
+            &:hover {
+                color: #ffffff;
+                background-color: #000000;
+                transition: 0.5s;
+            }
+        }
+    }
+}

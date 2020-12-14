@@ -1,0 +1,142 @@
+.bg-footer{
+    background-color: $color-secondary;
+}
+.footer-items {
+    .footer-menu {
+        a {
+            padding: 0 12px;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                border-bottom: 1px solid #ffffff;
+                opacity: 0;
+                width: 0;
+                left: 0;
+                bottom: 0;
+                transition: 0.5s;
+            }
+            &:hover::before{
+                width: 100%;
+                opacity: 1;
+                transition: 0.5s;
+            }
+            @include pad {
+                font-size: $font-size-s;
+                padding-right: 20px;
+            }
+        }
+    @include iphone {
+        display: none;
+        }
+    }
+    .footer-contact{
+    img {
+        width: 100%;
+        max-width: 48px;
+        padding-right: 17px;
+        @include pad {
+            max-width: 40px;
+            padding-right: 15px;
+            }
+        @include iphone {
+            max-width: 20px;
+            padding-right: 8px;
+            }
+        }
+        a {
+            &:hover {
+                opacity: 0.5;
+            }
+            @include pad {
+                font-size: 20px;
+            }
+            @include iphone {
+                font-size: 16px;
+            }
+        }
+    }
+}
+.footer-icon{
+    li {
+        @include desk992 {
+            padding-left: 24px;
+        }
+        @include pad {
+            padding-left: 18px;
+        }
+    }
+    img {
+        width: 100%;
+        max-width: 48px;
+        max-height: 48px;
+        &:hover {
+            opacity: 0.5;
+        }
+        @include desk992 {
+            max-width: 39px;
+            max-height: 39px; 
+        }
+        @include pad {
+            max-width: 24px;
+            max-height: 24px;
+        }
+    }
+}
+.border{
+    width: 100%;
+    border-bottom: 1px #ffffff solid;
+}
+.footer-bottom {
+    @include iphone {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .footer-copyright{
+        img {
+            max-width: 80px;
+            margin-right: 38px;
+        }
+        a {
+            @include pad {
+                display: none;
+            }
+        }
+        @include iphone {
+            padding-bottom: 7px;
+        }
+    }
+    .footer-bottom-text {
+        @include iphone {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    .footer-privacy{
+        @include iphone {
+            flex-direction: column; 
+        }
+        li {
+            padding-left: 62px;
+            @include pad {
+                padding-left: 24px;
+            }
+            @include iphone {
+                 padding-left: 0;
+                 padding-bottom: 8px;
+            }
+        }
+    }
+    .footer-bottom-logo{
+        display: none;
+        img {
+            width: 46px;
+            height: 28px;
+        }
+        @include iphone {
+            display: flex;
+            justify-content: flex-end;
+        }   
+    }   
+}

@@ -1,0 +1,130 @@
+.bg-nav{
+    background-color:$color-secondary ;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    .logo {
+        h1 {
+            text-align: left;
+        }
+        a {
+            background-image: url(../images/logo.png);
+            width: 80px;
+            height: 49px;
+            display: block;
+            text-indent: 101%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+    @include pad {
+        padding: 30px 39px;
+    }
+    @include iphone {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px 0px;
+    }
+}
+@include iphone {
+    .logo{
+        padding:10px 0;
+    }
+}
+.nav-menu{
+    display: flex;
+     @include iphone {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    li {
+        @include iphone {
+            width: 50%;
+            border: 1px solid #ffffff;
+        }
+    }
+    a { 
+        position: relative;
+        text-align: center;
+        padding: 0 $pd-6;
+        &::before{
+            content: '';
+            position: absolute;
+            border-bottom: 2px solid #ffffff;
+            opacity: 0;
+            width: 0;
+            left: 0;
+            bottom: 0;
+            transition: 0.5s;
+        }
+        &:hover::before{
+            width: 100%;
+            opacity: 1;
+            transition: 0.5s;
+        }
+        @include pad {
+            padding: 0 10px;
+        }
+        @include iphone {
+            &:hover {
+                border-bottom:none;
+            }
+        }
+    }
+}
+.blog_nav {
+    background-color: $color-primary;
+    .blog_nav_item {
+        li {
+            padding-right: 48px;
+            padding-top: 12px;
+            padding-bottom: 14px;
+            @include iphone {
+                padding: 16px 12px;
+            }
+        }
+        a {
+            text-align: center;
+            &:hover {
+                opacity: 0.5;
+            }
+            @include pad {
+                font-size: 16px;
+            }
+        }
+        @include iphone {
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+    .search {
+        @include iphone {
+            display: none;
+        }
+    }
+}
+.blog_content_nav {
+    margin-top: 8px;
+    margin-bottom: 17px;
+    .blog_content_nav_item {
+        .item_link {
+                &:hover {
+                color: $color-primary;
+                font-weight: 700;
+            }
+        }
+    }
+    .blog_content_nav_item:not(:last-child) {
+        .item_link {
+            &::after {
+                content: '/';
+                color: #000;
+                margin: 0 5px;
+            }
+        }
+    }
+
+}

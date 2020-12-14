@@ -1,0 +1,15 @@
+.product-banner {
+  width: 100%;
+}
+.product-banner li {
+  width: 50%;
+  height: 309px;
+}
+.product-banner li:nth-child(odd) {
+  background-image: url(../images/banner-1.png);
+  margin-right: 15px;
+}
+.product-banner li:nth-child(even) {
+  background-image: url(../images/banner-2.png);
+  margin-left: 15px;
+}
