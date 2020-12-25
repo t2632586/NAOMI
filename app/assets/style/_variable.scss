@@ -1,0 +1,52 @@
+// 輸入Roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+// 輸入Noto Sans TC
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
+
+//預設的font-family
+$font-family-base: 'Roboto', "Noto Sans TC", sans-serif;
+
+body {
+  font-family: $font-family-base;
+  overflow-x: hidden;
+}
+
+// 文字大小設定
+$font-size-base: 1rem; // =16px
+
+$font-size-h1: $font-size-base * 1.25;   //20px
+$font-size-h2: $font-size-base * 1.5;    //24px
+$font-size-h3: $font-size-base * 2;      //32px
+$font-size-h4: $font-size-base * 2.25;   //36px
+$font-size-h5: $font-size-base * 3;      //48px
+$font-size-h6: $font-size-base * 4;      //64px
+
+$font-size-s: $font-size-base * 0.875;   //14px
+$font-size-m: $font-size-base;           //16px
+$font-size-l: $font-size-base * 1.125;   //18px
+
+
+//顏色宣告
+$color-primary: #650300;
+$color-secondary: #AA0601;
+$color-light: #FFFFFF;
+$color-dark: #212529;
+$color-bg: #AA06010D;
+
+
+//間距設定
+$padding-base: 4px;
+$spacing: 20px;
+
+$pd-1: $padding-base;
+$pd-2: $padding-base * 2;    //8px
+$pd-3: $padding-base * 4;    //16px 
+$pd-4: $padding-base * 5;    //20px
+$pd-5: $padding-base * 6;    //24px
+$pd-6: $padding-base * 8;    //32px
+$pd-7: $padding-base * 10;   //40px
+$pd-8: $padding-base * 12;   //48px
+$pd-9: $padding-base * 15;   //60px
+$pd-10: $padding-base * 16;  //64px
+$pd-11: $padding-base * 20;  //80px

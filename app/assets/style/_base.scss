@@ -1,0 +1,112 @@
+*,*:before,*:after {
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+
+.font-title {
+    font-size: $font-size-h6;
+    @include pad {
+        font-size: $font-size-h5;
+    }
+    @include mobile375 {
+        font-size: $font-size-h3;
+    }
+}
+.font-subhead {
+    font-size: $font-size-h4;
+    @include pad {
+        font-size: $font-size-h1;
+    }
+    @include mobile375 {
+        font-size: $font-size-m;
+    }
+}
+
+.font-caption {
+    font-size: $font-size-h5;
+    @include pad {
+        font-size: $font-size-h3;
+    }
+    @include mobile375 {
+        font-size: $font-size-h2;
+    }
+}
+
+.ft-opt {
+    font-size: $font-size-base * 2.625; //42px
+    @include desk992 {
+        font-size: 32px;
+    }
+    @include pad {
+        font-size: 28px;
+    }
+    @include mobile668 {
+        font-size: 21px;
+    }
+    @include iphone {
+        font-size: 14px;
+    }
+    
+}
+
+//容器設定
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-left: $spacing * 2;
+    padding-right: $spacing * 2;
+    @include pad {
+        max-width: 690px;
+        margin: 0 auto;
+        padding-left: 39px;
+        padding-right: 39px;
+    }
+    @include mobile375 {
+        max-width: 345px;
+        margin: 0 auto;
+        padding-left: $spacing * 0.75;
+        padding-right: $spacing * 0.75;
+    }
+}
+.max-w920 {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+//文字大小命名
+.h1{
+    font-size: $font-size-h1; //20px
+}
+.h2{
+    font-size: $font-size-h2; //24px
+}  
+.h3{
+    font-size: $font-size-h3; //32px
+}  
+.h4{
+    font-size: $font-size-h4; //36px
+}    
+.h5{
+    font-size: $font-size-h5; //48px
+}
+.h6{
+    font-size: $font-size-h6; //64px
+}
+.ft-s{
+    font-size: $font-size-s; //14px
+}
+.ft-m{
+    font-size: $font-size-m; //16px
+}
+.ft-l{
+    font-size: $font-size-l; //18px
+}

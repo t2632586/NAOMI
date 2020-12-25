@@ -5,9 +5,9 @@ engine: ejs
 current: blog_content
 ---
 <!--nav-->
-<nav class="blog_nav">
+<nav class="blog_nav_for_content">
     <div class="d-flex align-center flex-space-between container">
-        <ul class="blog_nav_item d-flex">
+        <ul class="blog_nav_item_for_content d-flex flex-space-between">
             <li><a class="h1 color-light" href="#">最新消息</a></li>
             <li><a class="h1 color-light" href="#">特別企劃</a></li>
             <li><a class="h1 color-light" href="#">新品上市</a></li>
@@ -15,7 +15,6 @@ current: blog_content
         </ul>
         <a class="search" href="#"><img src="./assets/images/icon-search.svg" alt="搜尋"></a>
     </div>
-    
 </nav>
 <!-- blog_content_nav-->
 <ul class="blog_content_nav d-flex container">
@@ -42,7 +41,7 @@ current: blog_content
             <div class="blog_content d-flex flex-column">
                 <div class="blog_content_title">
                     <div class="d-flex flex-column">
-                        <h3 class="h5">情人特別企劃</h3>
+                        <h3 class="h5 font-weight-b">情人特別企劃</h3>
                         <div class="blog_text_subtitle d-flex flex-space-between pd-b-5">
                             <h4 class="font-weight-m">2020 Valentine’s Special </h4>
                             <span class="ft-m">2020/02/14</span>
@@ -80,17 +79,20 @@ current: blog_content
                         </li>
                     </ul>
                 </div>
-                <ul class="share-icon d-flex">
-                    <li class="pd-r-4">Share</li>
-                    <li>
-                        <a class="pd-r-3" href="#"><img src="./assets/images/logo-facebook.svg" alt="分享到facebook">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./assets/images/logo-instagram.svg" alt="分享到instagram">
-                        </a>
-                    </li>
-                </ul>
+                <div class="d-flex ">
+                    <h5 class="h2 fot-weight-b pd-r-4">Share</h5>
+                    <ul class="share-icon d-flex">
+                        <li>
+                            <a class="pd-r-3" href="#"><img src="./assets/images/logo-facebook.svg" alt="分享到facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assets/images/logo-instagram.svg" alt="分享到instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
                 <ul class="post_control d-flex flex-space-between">
                     <li>
                         <a class="d-flex" href="#">
@@ -109,7 +111,8 @@ current: blog_content
             <div class="blog_tags font-weight-b">
                 <a class="h2 d-flex align-center pd-r-3 color-secondary" href="#">
                     <img class="pd-r-2"
-                        src="./assets/images/icon-tag.svg" alt="">TAGS
+                        src="./assets/images/icon-tag.svg">
+                        <h5 class="blog_tags_title">TAGS</h5>
                 </a>
                 <div class="blog_hashtag d-flex flex-column">
                     <div class="hashtag_item d-flex">
