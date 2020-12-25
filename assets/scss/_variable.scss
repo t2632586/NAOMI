@@ -1,0 +1,275 @@
+// 輸入Roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+// 輸入Noto Sans TC
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
+
+//預設的font-family
+$font-family-base: 'Roboto', "Noto Sans TC", sans-serif;
+
+body {
+  font-family: $font-family-base;
+}
+
+
+// 文字大小設定
+$font-size-base: 1rem; // =16px
+
+$font-size-h1: $font-size-base * 1.25;   //20px
+$font-size-h2: $font-size-base * 1.5;    //24px
+$font-size-h3: $font-size-base * 2;      //32px
+$font-size-h4: $font-size-base * 2.25;   //36px
+$font-size-h5: $font-size-base * 3;      //48px
+$font-size-h6: $font-size-base * 4;      //64px
+
+$font-size-s: $font-size-base * 0.875;   //14px
+$font-size-m: $font-size-base;           //16px
+$font-size-l: $font-size-base * 1.125;   //18px
+
+//文字大小命名
+.h1{
+    font-size: $font-size-h1; //20px
+}
+.h2{
+    font-size: $font-size-h2; //24px
+}  
+.h3{
+    font-size: $font-size-h3; //32px
+}  
+.h4{
+    font-size: $font-size-h4; //36px
+}    
+.h5{
+    font-size: $font-size-h5; //48px
+}
+.h6{
+    font-size: $font-size-h6; //64px
+}
+.ft-s{
+    font-size: $font-size-s; //14px
+}
+.ft-m{
+    font-size: $font-size-m; //16px
+}
+.ft-l{
+    font-size: $font-size-l; //18px
+}
+
+//文字樣式設定
+.font-weight-r {
+    font-weight: 400;
+}
+.font-weight-m {
+    font-weight: 500;
+}
+.font-weight-b {
+    font-weight: 700;
+}
+.font-weight-ba {
+    font-weight: 900;
+}
+.roboto {
+    font-family: "Roboto";
+}
+
+//顏色設定
+$color-primary: #650300;
+$color-secondary: #AA0601;
+$color-light: #FFFFFF;
+$color-dark: #212529;
+$color-bg: #AA06010D;
+
+.color-primary {
+    color: $color-primary;
+}
+.color-secondary {
+    color: $color-secondary;
+}
+.color-light {
+    color: $color-light;
+}
+.color-dark {
+    color: $color-dark;
+}
+.color-bg {
+    color: #AA06010D;
+}
+.color-text {
+    color: #000000;
+}
+
+//間距設定
+$padding-base: 4px;
+
+$pd-1: $padding-base;
+$pd-2: $padding-base * 2;    //8px
+$pd-3: $padding-base * 4;    //16px 
+$pd-4: $padding-base * 5;    //20px
+$pd-5: $padding-base * 6;    //24px
+$pd-6: $padding-base * 8;    //32px
+$pd-7: $padding-base * 10;   //40px
+$pd-8: $padding-base * 12;   //48px
+$pd-9: $padding-base * 15;   //60px
+$pd-10: $padding-base * 16;  //64px
+$pd-11: $padding-base * 20;  //80px
+
+//padding-bottom 間距設定
+.pd-b-1{
+    padding-bottom: $pd-1;
+}
+.pd-b-2{
+    padding-bottom: $pd-2;  //8px
+}
+.pd-b-3{
+    padding-bottom: $pd-3;  //16px
+}
+.pd-b-4{
+    padding-bottom: $pd-4;  //20px
+}
+.pd-b-5{
+    padding-bottom: $pd-5;  //24px
+}
+.pd-b-6{
+    padding-bottom: $pd-6;  //32px
+}
+.pd-b-7{
+    padding-bottom: $pd-7;  //40px
+}
+.pd-b-8{
+    padding-bottom: $pd-8;  //48px
+}
+.pd-b-9{
+    padding-bottom: $pd-9;  //60px
+}
+.pd-b-10{
+    padding-bottom: $pd-10;  //64px
+}
+.pd-b-11{
+    padding-bottom: $pd-11;  //80px
+}
+
+
+//padding-top 間距設定
+.pd-t-1{
+    padding-top: $pd-1;
+}
+.pd-t-2{
+    padding-top: $pd-2;  //8px
+}
+.pd-t-3{
+    padding-top: $pd-3;  //16px
+}
+.pd-t-4{
+    padding-top: $pd-4;  //20px
+}
+.pd-t-5{
+    padding-top: $pd-5;  //24px
+}
+.pd-t-6{
+    padding-top: $pd-6;  //32px
+}
+.pd-t-7{
+    padding-top: $pd-7;  //40px
+}
+.pd-t-8{
+    padding-top: $pd-8;  //48px
+}
+.pd-t-9{
+    padding-top: $pd-9;  //60px
+}
+.pd-t-10{
+    padding-top: $pd-10;  //64px
+}
+.pd-t-11{
+    padding-top: $pd-11;  //80px
+}
+
+//padding-right 間距設定
+.pd-r-1{
+    padding-right: $pd-1;
+}
+.pd-r-2{
+    padding-right: $pd-2;  //8px
+}
+.pd-r-3{
+    padding-right: $pd-3;  //16px
+}
+.pd-r-4{
+    padding-right: $pd-4;  //20px
+}
+.pd-r-5{
+    padding-right: $pd-5;  //24px
+}
+.pd-r-6{
+    padding-right: $pd-6;  //32px
+}
+.pd-r-7{
+    padding-right: $pd-7;  //40px
+}
+.pd-r-8{
+    padding-right: $pd-8;  //48px
+}
+.pd-r-9{
+    padding-right: $pd-9;  //60px
+}
+.pd-r-10{
+    padding-right: $pd-10;  //64px
+}
+.pd-r-11{
+    padding-right: $pd-11;  //80px
+}
+
+//padding-left 間距設定
+.pd-l-1{
+    padding-left: $pd-1;
+}
+.pd-l-2{
+    padding-left: $pd-2;  //8px
+}
+.pd-l-3{
+    padding-left: $pd-3;  //16px
+}
+.pd-l-4{
+    padding-left: $pd-4;  //20px
+}
+.pd-l-5{
+    padding-left: $pd-5;  //24px
+}
+.pd-l-6{
+    padding-left: $pd-6;  //32px
+}
+.pd-l-7{
+    padding-left: $pd-7;  //40px
+}
+.pd-l-8{
+    padding-left: $pd-8;  //48px
+}
+.pd-l-9{
+    padding-left: $pd-9;  //60px
+}
+.pd-l-10{
+    padding-left: $pd-10;  //64px
+}
+.pd-l-11{
+    padding-left: $pd-11;  //80px
+}
+
+
+.mg-r-1 {
+    margin-right: 30px;
+}
+.mg-r-2 {
+    margin-right: 8px;
+}
+.mg-r-3 {
+    margin-right: 24px;
+}
+.mg-l-1 {
+    margin-left: 30px;
+}
+.mg-t-1 {
+    margin-top: 16px;
+}
+.mg-0-auto {
+    margin: 0 auto;
+}

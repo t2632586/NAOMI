@@ -1,0 +1,85 @@
+.info {
+    margin-top: 16px;
+    margin-bottom: 304px;
+    @include desk992 {
+        flex-wrap: wrap;
+    }
+    @include pad {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+}
+.info_box {
+    max-width: 445px;
+    margin-right: 30px;
+    @include desk992 {
+        max-width: 1110px;
+        flex-direction: row;
+        margin-bottom: 32px;
+    }
+    @include pad {
+        flex-direction: column;
+        margin-bottom: 16px;
+        margin-right: 0;
+    }
+    .info_pic {
+    @include desk992 {
+        width: 50%;
+        margin-right: 30px;
+    }
+    @include pad {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+    .info_text {
+        .commodity-text-location {
+            border-bottom: 1px solid #00000020;
+        }
+        @include desk992 {
+            width: 50%;
+        }
+        @include pad {
+            width: 100%;
+        }
+    }
+}
+.info-border {
+    border-right: 1px solid #00000020;
+    border-left: 1px solid #00000020;
+}
+.info-name {
+    padding-left: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 1px solid #00000020;
+}
+.info-icon {
+    img {
+        width: 21px;
+        height: 21px;
+        margin-right: 12px;
+    }
+}
+.commodity-text-location {
+    padding: 12px 0;
+    li {
+        padding: 4px 24px;
+    }
+}
+.location-info {
+    a {
+        font-size: 19px;
+        color: #FFFFFF;
+        padding: 20px;
+        background-color: #000000;
+        &:hover {
+            background-color: $color-primary;
+            transition: 0.5s;
+        }
+    }
+    
+}
+.map {
+    max-width: 635px;
+}
