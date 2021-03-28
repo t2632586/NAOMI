@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48"><defs><style>.a,.b{fill:#fff;}.a{stroke:#fff;}.c{clip-path:url(#a);}.d{clip-path:url(#b);}</style><clipPath id="a"><rect class="a" width="48" height="48" transform="translate(0)"/></clipPath><clipPath id="b"><rect class="b" width="39.385" height="40.615" transform="translate(0 0)"/></clipPath></defs><g transform="translate(0.471)"><g class="c" transform="translate(-0.471 0)"><g class="d" transform="translate(4.923 3.692)"><path class="b" d="M40.008,20A20,20,0,1,0,16.878,39.766V25.786H11.8V20h5.079V15.6c0-5.013,2.985-7.783,7.556-7.783a30.765,30.765,0,0,1,4.477.391v4.923H26.388c-2.485,0-3.258,1.543-3.258,3.126V20h5.548l-.887,5.782H23.129V39.766A20.007,20.007,0,0,0,40.008,20Z" transform="translate(-0.343 0.308)"/></g></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#212529;}
+</style>
+<rect class="st0" width="48" height="48"/>
+<rect x="4.9" y="3.7" class="st0" width="39.4" height="40.6"/>
+<g transform="translate(4.923 3.692)">
+	<path class="st1" d="M39.7,20.3c0-11-9-20-20-20s-20,9-20,20c0,9.8,7.2,18.2,16.9,19.7v-14h-5.1v-5.8h5.1v-4.4c0-5,3-7.8,7.6-7.8
+		c1.5,0,3,0.2,4.5,0.4v4.9H26c-2.5,0-3.3,1.5-3.3,3.1v3.7h5.5l-0.9,5.8h-4.7v14C32.5,38.5,39.7,30.2,39.7,20.3z"/>
+</g>
+</svg>
